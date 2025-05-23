@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <title>Kat Wellness 5 Days FLOW program Survey Form</title>
+    
+</head>
+<body>
+
+  
+<h1 id="title">Kat Wellness 5 Days FLOW Program Survey Form</h1>
+<p id="description">We appreciate your feedback! Please take a moment to complete this short survey.</p>
+
+
+<div class="dumbbell-container">
+  <div class="dumbbell">
+    <div class="bar"></div>
+    <div class="weight left"></div>
+    <div class="weight right"></div>
+  </div>
+</div>
+
+
+
+<form method="post" action="#">
+
+<label id="name-label" for="name">Name:</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      placeholder="Enter your full name" 
+      required
+    />
+
+    <label id="email-label" for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="Enter a valid email address" 
+      required
+    />
+
+    <label id="number-label" for="number">Age:</label>
+    <input 
+      type="number" 
+      id="number" 
+      name="age" 
+      placeholder="Enter your valid age" 
+      min="10" 
+      max="50" 
+    />
+
+    <fieldset>
+    <legend>What is your favorite exercise of the day 1?</legend>
+
+
+<label><input type="checkbox" name="usage_day1" value="100 squats">100 squats</label>
+    <label><input type="checkbox" name="usage_day1" value="500 jumping jacks">500 jumping jacks</label>
+    <label><input type="checkbox" name="usage_day1" value="none">None</label>
+    </fieldset>
+<label for="day1-dropdown">How will you rate it?</label>
+<select id="day1-dropdown" name="day1_rating">
+  <option value="good">Good</option>
+  <option value="awesome">Awesome</option>
+  <option value="hot">Hot!</option>
+</select>
+
+<fieldset>
+    <legend>What is your favorite exercise of the day 2?</legend>
+
+
+<label><input type="checkbox" name="usage_day2" value="100 donkey kickbacks">100 donkey kickbacks</label>
+    <label><input type="checkbox" name="usage_day2" value="50 push-ups">50 push-ups</label>
+    <label><input type="checkbox" name="usage_day2" value="5 minutes plank">5 minutes plank</label>
+    <label><input type="checkbox" name="usage_day2" value="none">None</label>
+</fieldset>
+
+<label for="day2-dropdown">How will you rate it?</label>
+<select id="day2-dropdown" name="day2_rating">
+  <option value="good">Good</option>
+  <option value="awesome">Awesome</option>
+  <option value="hot">Hot!</option>
+</select>
+
+<fieldset>
+  <legend>What is your favorite exercise of the day 3?</legend>
+
+
+    <label><input type="checkbox" name="usage_day3" value="100 plank jacks">100 plank jacks</label>
+    <label><input type="checkbox" name="usage_day3" value="50 slow mountain">50 slow mountain</label>
+    <label><input type="checkbox" name="usage_day3" value="50 single leg squat[25 each leg]">50 single leg squat[25 each leg]</label>
+    <label><input type="checkbox" name="usage_day3" value="none">None</label>
+</fieldset>
+
+<label for="day3-dropdown">How will you rate it?</label>
+<select id="day3-dropdown" name="day3_rating">
+  <option value="good">Good</option>
+  <option value="awesome">Awesome</option>
+  <option value="hot">Hot!</option>
+</select>
+<fieldset>
+
+<legend>What is your favorite exercise of the day 4?</legend>
+
+<label><input type="checkbox" name="usage_day4" value="downward dog to forward fold[3 slow reps]">Downward dog to forward fold[3 slow reps]</label>
+<label><input type="checkbox" name="usage_day4" value="cat cow [8 breaths]">Cat cow [8 breaths]</label>
+<label><input type="checkbox" name="usage_day4" value="butterfly fold[1min]">Butterfly fold[1min]</label>
+<label><input type="checkbox" name="usage_day4" value="seated twist [hold 30secs/side]">Seated twist [hold 30secs/side]</label>
+<label><input type="checkbox" name="usage_day4" value="savasana or meditation">Savasana or meditation</label>
+<label><input type="checkbox" name="usage_day4" value="none">None</label>
+</fieldset>
+<label for="day4-rating">How will you rate it?</label>
+
+<select id="day4-dropdown" name="day4_rating">
+  <option value="good">Good</option>
+  <option value="awesome">Awesome</option>
+  <option value="hot">Hot!</option>
+</select>
+
+    
+<fieldset>
+  <legend>What is your favorite exercise of the day 5?</legend>
+  <label><input type="checkbox" name="usage_day5" value="100 jump squats">100 jump squats</label>
+  <label><input type="checkbox" name="usage_day5" value="100 jump lunges">100 jump lunges</label>
+  <label><input type="checkbox" name="usage_day5" value="50 push-ups">50 push-ups</label>
+  <label><input type="checkbox" name="usage_day5" value="none">None</label>
+</fieldset>
+
+<label for="day5-rating">How will you rate it?</label>
+<select id="day5-rating" name="day5_rating">
+  <option value="good">Good</option>
+  <option value="awesome">Awesome</option>
+  <option value="hot">Hot!</option>
+</select>
+
+    <label for="comments">Additional comments on this week's exercises:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+
+    <br><br>
+
+    
+
+    <button type="submit" id="submit">Submit</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

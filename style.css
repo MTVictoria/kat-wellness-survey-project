@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #dbbf99;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+h1 {
+    color: rgb(75, 44, 8);
+}
+
+/* Animated dumbbell styles */
+.dumbbell-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.dumbbell {
+  position: relative;
+  width: 120px;
+  height: 30px;
+  animation: lift 2s infinite alternate ease-in-out;
+}
+
+.bar {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 80px;
+  height: 6px;
+  background: #915507;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.weight {
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #a35617;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 8px #161414;
+}
+
+.weight.left {
+  left: 0;
+}
+
+.weight.right {
+  right: 0;
+}
+
+@keyframes lift {
+  0% { transform: translateY(0) rotate(-10deg);}
+  100% { transform: translateY(-30px) rotate(10deg);}
+}
